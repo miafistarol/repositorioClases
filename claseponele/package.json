@@ -1,0 +1,17 @@
+{
+  "name": "claseponele",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "leerApi" : "node leerApi",
+    "escribirApi" : "node escribirApi"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
+
+  
