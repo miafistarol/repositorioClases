@@ -2,11 +2,11 @@
   "name": "claseponele",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
-    "dev": "node index.js",
-    "leerApi" : "node leerApi",
-    "escribirApi" : "node escribirApi"
+    "dev": "node index.mjs",
+    "leerApi" : "node leerApi.mjs",
+    "escribirApi" : "node escribirApi.mjs"
   },
   "keywords": [],
   "author": "",
