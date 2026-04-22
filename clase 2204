@@ -1,0 +1,77 @@
+node_modules/
+import express from "express"
+
+const PUERTO = 8585
+//instanciar un servidor express
+const app = express()
+
+app.get('/saludo', (req, res)=> {
+    res.end('hola con get')
+})
+
+app.get('/', (req, res)=> {
+    res.set('content-type' , 'text/html') //cabecera
+
+    //MIME TYPES
+    res
+    .status(200) //codigo de estado 
+    .end ('<h1> hola con get </<h1>') //cuerpo -> contenido
+})
+
+app.get('/materias', (req, res)=> {
+    res.set('content-type' , 'application/json') //cabecera
+
+    //MIME TYPES
+    res
+    .status(200) //codigo de estado 
+    .end (`
+        {
+        
+    "materia": "Aplicaciones Web 2"
+    "materia": "Base de datos 2"
+    "materia": "Analisis de sistemas"
+    "materia": "PP2"
+    
+    }`) //cuerpo -> contenido
+})
+
+
+
+app.get('/informacion', (req, res)=> {
+    res.end('te envio contenido clasificado, mirar con discrecion')
+})
+app.post('/', (req, res)=> {
+    res.end('hola con post')
+})
+app.post('/informacion', (req, res)=> {
+    res.end('te envio un cariño')
+})
+//abrir un puerto 
+app.listen(PUERTO, ()=> {
+    console.log(`Servidor corriendo en http://localhost:${PUERTO}`)
+})
+{
+  "name": "repositorioclases",
+  "version": "1.0.0",
+  "description": "Las clases estarán aquí",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch index.mjs",
+    "start": "node index.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miafistarol/repositorioClases.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/miafistarol/repositorioClases/issues"
+  },
+  "homepage": "https://github.com/miafistarol/repositorioClases#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
