@@ -88,4 +88,6 @@ app.listen(PUERTO, () => {
     console.log(`Servidor proyecto corriendo en ${PUERTO}`)
 })
 
+//IMPORTANTE -----> DEBO HACER npm run dev: api y dev:proy EN DIFERENTES TERMINALES
+
 
