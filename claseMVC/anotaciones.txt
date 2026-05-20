@@ -5,3 +5,4 @@ son capas en donde divido responsabilidades
 Modelo - Vista - Controlador
 
 Modelo se conecta a nuestros datos 
+Vista es lo que ve el usuario

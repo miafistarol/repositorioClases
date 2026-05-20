@@ -1,0 +1,15 @@
+repasar callback
+
+MVC ---> patron de diseño
+son capas en donde divido responsabilidades
+Modelo - Vista - Controlador
+
+Modelo se conecta a nuestros datos 
+Vista es lo que ve el usuario, no lo vamos a implementar por el momento 
+controlador conecta el modelo con la vista -----> orquesta / dirige 
+
+MVC: me permite que sea mantenible y escalable 
+
+Router: agrupar rutas 
+
+
